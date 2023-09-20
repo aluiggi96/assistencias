@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ficha de Asistencias</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Ficha de Asistencias</h2>
+        <!-- Select para elegir estudiante -->
+        <div class="form-group">
+            <label for="studentSelect">Seleccionar Estudiante:</label>
+            <select id="studentSelect">
+                <option value="estudiante1">Estudiante 1</option>
+                <option value="estudiante2">Estudiante 2</option>
+                <option value="estudiante3">Estudiante 3</option>
+                <!-- Agregar más opciones según los nombres de tus estudiantes -->
+            </select>
+        </div>
+        <!-- Resto del formulario -->
+        <div class="form-group">
+            <label for="attendanceType">Marca de Entrada o Salida:</label>
+            <select id="attendanceType">
+                <option value="entrada">Entrada</option>
+                <option value="salida">Salida</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button id="submitAttendance">Registrar Asistencia</button>
+        </div>
+        <div class="form-group">
+            <button id="downloadButton">Descargar Asistencias en Excel</button>
+        </div>
+        <div id="attendanceLog">
+            <!-- Aquí se mostrarán las asistencias registradas -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
